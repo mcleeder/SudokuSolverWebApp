@@ -1,0 +1,140 @@
+﻿@model SudokuSolverWebApp.Models.Sudoku
+
+<div class="container text-center">
+  <h1 class="display-3 text-dark mt-4">Sudoku</h1>
+</div>
+
+<div class="container text-center">
+  <div class="text-center">
+    <table class="ml-auto mr-auto">
+      <tr>
+        <td>@Html.DisplayTextFor(model => model.grid[0])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[1])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[2])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[3])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[4])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[5])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[6])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[7])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[8])</td>
+      </tr>
+
+      <tr>
+        <td>@Html.DisplayTextFor(model => model.grid[9])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[10])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[11])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[12])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[13])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[14])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[15])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[16])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[17])</td>
+      </tr>
+
+      <tr class="hline">
+        <td>@Html.DisplayTextFor(model => model.grid[18])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[19])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[20])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[21])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[22])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[23])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[24])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[25])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[26])</td>
+      </tr>
+
+      <tr>
+        <td>@Html.DisplayTextFor(model => model.grid[27])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[28])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[29])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[30])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[31])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[32])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[33])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[34])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[35])</td>
+      </tr>
+
+      <tr>
+        <td>@Html.DisplayTextFor(model => model.grid[36])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[37])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[38])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[39])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[40])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[41])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[42])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[43])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[44])</td>
+      </tr>
+
+      <tr class="hline">
+        <td>@Html.DisplayTextFor(model => model.grid[45])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[46])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[47])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[48])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[49])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[50])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[51])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[52])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[53])</td>
+      </tr>
+
+      <tr>
+        <td>@Html.DisplayTextFor(model => model.grid[54])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[55])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[56])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[57])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[58])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[59])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[60])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[61])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[62])</td>
+      </tr>
+
+      <tr>
+        <td>@Html.DisplayTextFor(model => model.grid[63])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[64])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[65])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[66])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[67])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[68])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[69])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[70])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[71])</td>
+      </tr>
+
+      <tr>
+        <td>@Html.DisplayTextFor(model => model.grid[72])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[73])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[74])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[75])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[76])</td>
+        <td class="vline">@Html.DisplayTextFor(model => model.grid[77])</td>
+
+        <td>@Html.DisplayTextFor(model => model.grid[78])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[79])</td>
+        <td>@Html.DisplayTextFor(model => model.grid[80])</td>
+      </tr>
+    </table>
+    <div class="mt-4 text-danger">
+      @ViewBag.Feedback
+    </div>
+  </div>
+</div>
