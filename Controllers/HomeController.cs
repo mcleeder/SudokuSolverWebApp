@@ -2,8 +2,7 @@
 using SudokuSolverWebApp.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Diagnostics;
 using System.Web.Mvc;
 
 
@@ -31,10 +30,13 @@ namespace SudokuSolverWebApp.Controllers
 
                 board.grid = ConvertToArrayFrom9x9(solutionboard);
 
+                ViewBag.Feedback = $"";
                 return View(board);
             }
             else
             {
+
+                ViewBag.Feedback = "This doesn't look like a valid board.";
                 return View("Index");
             }
 
@@ -138,7 +140,7 @@ namespace SudokuSolverWebApp.Controllers
                     }
                 }
             }
-            if (SolutionCheck(board) && !solved)
+            if (SolutionCheck(board) && !solved) //only one output
             {
                 solved = true;
                 solutionboard = (int[,]) board.Clone();
@@ -171,7 +173,7 @@ namespace SudokuSolverWebApp.Controllers
             if (y > 2) gridY = 3;
             if (y > 5) gridY = 6;
 
-            //9x9 square check using above coords as starting point
+            //3x3 square check using super coords as starting point
             for (int i = gridY; i < gridY + 3; i++)
             {
                 for (int j = gridX; j < gridX + 3; j++)
