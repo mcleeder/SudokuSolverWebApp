@@ -4,7 +4,7 @@ The Good:
 - Fully functional ASP.NET MVC app that works as advertised, will solve a given sudoku puzzle.
 - C# for logic, Bootstrap for pretty, jQuery for validation.
 - My first use of recursion and 2D Arrays. Gained a lot of understanding of both.
-- The method that checks if a number can be placed in a square is (I think) particularly good.
+- The method that checks if a number can be placed in a square is (I think) particularly well done.
 
 The Bad:
 - It's not able to check for a board with no solution.
